@@ -13,32 +13,28 @@ protocol SplashCoordinator: AnyObject {
 }
 
 class SplashCoordinatorImp: Coordinator {
-    
-    var navigationController: UINavigationController
 
     unowned let window: UIWindow
 
-    init(window: UIWindow, navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(window: UIWindow) {
         self.window = window
     }
 
     func start() {
+        
         let splashViewController = SplashViewController()
         splashViewController.coordinator = self
-       
         window.rootViewController = splashViewController
         window.makeKeyAndVisible()
     }
+    
 }
 
 extension SplashCoordinatorImp: SplashCoordinator {
     
     func moveToMain(with initData: Any?) {
-        let coordinator = HomeCoordinatorImp(navigationController: self.navigationController)
+        let coordinator = HomeCoordinatorImp(window: window)
         coordinate(to: coordinator)
-//        let coordinator = TabBarCoordinatorImp(window: window, initData: nil)
-//        coordinate(to: coordinator)
     }
     
 

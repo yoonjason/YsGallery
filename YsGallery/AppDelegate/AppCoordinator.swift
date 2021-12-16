@@ -9,17 +9,15 @@ import Foundation
 import UIKit
 
 class AppCoordinator: Coordinator {
-    var navigationController: UINavigationController
     
     let window: UIWindow
 
-    init(window: UIWindow, navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(window: UIWindow) {
         self.window = window
     }
     
     func start() {
-        let splashCoordinator = SplashCoordinatorImp(window: window, navigationController: navigationController)
+        let splashCoordinator = SplashCoordinatorImp(window: window)
         coordinate(to: splashCoordinator)
     }
     

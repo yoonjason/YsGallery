@@ -14,39 +14,28 @@ protocol HomeCoordinator: AnyObject {
 
 class HomeCoordinatorImp: Coordinator {
 
-    var navigationController: UINavigationController
-//    unowned let window: UIWindow
-
+    var navigationController = UINavigationController()
+    unowned let window: UIWindow
 
     func start() {
         let vc = HomeViewController()
         vc.coordinator = self
         navigationController.navigationBar.backgroundColor = .white
-//        navigationController.present(vc, animated: true, completion: nil)
-        
-        
-//        navigationController.navigationBar.isTranslucent = false
-//        navigationController.navigationBar.isHidden = false
-        self.navigationController.pushViewController(vc, animated: false)
-        navigationController.navigationBar.isTranslucent = false
-//        navigationController.modalPresentationStyle = .fullScreen
-
-        print(#function)
-
+        navigationController = UINavigationController(rootViewController: vc)
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
     }
 
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(window: UIWindow) {
+        self.window = window
     }
-
-
 
 }
 
 extension HomeCoordinatorImp: HomeCoordinator {
     
     func didTapImageDetail() {
-        let coordinator = ImageDetailCoordinatorImp(navigationController: self.navigationController)
+    let coordinator = ImageDetailCoordinatorImp(navigationController: self.navigationController)
         coordinate(to: coordinator)
     }
     
