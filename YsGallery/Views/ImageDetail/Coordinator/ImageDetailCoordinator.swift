@@ -20,6 +20,7 @@ class ImageDetailCoordinatorImp: Coordinator {
         let vc = ImageDetailViewController()
         vc.coordinator = self
         self.navigationController.modalPresentationStyle = .overFullScreen
+        self.navigationController.modalTransitionStyle = .coverVertical
         self.navigationController.present(vc, animated: true, completion: nil)
  
     }

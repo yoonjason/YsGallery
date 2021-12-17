@@ -24,6 +24,7 @@ class SplashCoordinatorImp: Coordinator {
         
         let splashViewController = SplashViewController()
         splashViewController.coordinator = self
+        
         window.rootViewController = splashViewController
         window.makeKeyAndVisible()
     }
@@ -33,7 +34,7 @@ class SplashCoordinatorImp: Coordinator {
 extension SplashCoordinatorImp: SplashCoordinator {
     
     func moveToMain(with initData: Any?) {
-        let coordinator = HomeCoordinatorImp(window: window)
+        let coordinator = TabBarCoordinatorImp(window: window, initData: nil)
         coordinate(to: coordinator)
     }
     

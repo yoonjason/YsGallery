@@ -19,6 +19,16 @@
 		06BDDD6D276B5CF900B68B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BDDD6B276B5CF900B68B25 /* Main.storyboard */; };
 		06BDDD72276B60B500B68B25 /* ImageDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD71276B60B500B68B25 /* ImageDetailCoordinator.swift */; };
 		06BDDD74276B60DB00B68B25 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD73276B60DB00B68B25 /* ImageDetailViewController.swift */; };
+		06BDDD7F276C0E2600B68B25 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD79276C0D0F00B68B25 /* TabBarCoordinator.swift */; };
+		06BDDD80276C0E2900B68B25 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD7B276C0D0F00B68B25 /* TabBar.swift */; };
+		06BDDD81276C0E2900B68B25 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD7C276C0D0F00B68B25 /* TabBarController.swift */; };
+		06BDDD82276C0E2A00B68B25 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD7E276C0D2F00B68B25 /* TabBarItem.swift */; };
+		06BDDD85276C101300B68B25 /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD84276C101000B68B25 /* UIDevice+.swift */; };
+		06BDDD8A276C1BE800B68B25 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD89276C1BE800B68B25 /* Photo.swift */; };
+		06BDDD8C276C1C0500B68B25 /* PhotoExif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD8B276C1C0500B68B25 /* PhotoExif.swift */; };
+		06BDDD8E276C1C5600B68B25 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD8D276C1C5600B68B25 /* User.swift */; };
+		06BDDD90276C1C9B00B68B25 /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD8F276C1C9B00B68B25 /* Dictionary+.swift */; };
+		06BDDD92276C1CC000B68B25 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDDD91276C1CC000B68B25 /* UIColor+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +46,16 @@
 		06BDDD6C276B5CF900B68B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YsGallery/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		06BDDD71276B60B500B68B25 /* ImageDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailCoordinator.swift; sourceTree = "<group>"; };
 		06BDDD73276B60DB00B68B25 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		06BDDD79276C0D0F00B68B25 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		06BDDD7B276C0D0F00B68B25 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		06BDDD7C276C0D0F00B68B25 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		06BDDD7E276C0D2F00B68B25 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		06BDDD84276C101000B68B25 /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
+		06BDDD89276C1BE800B68B25 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		06BDDD8B276C1C0500B68B25 /* PhotoExif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoExif.swift; sourceTree = "<group>"; };
+		06BDDD8D276C1C5600B68B25 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		06BDDD8F276C1C9B00B68B25 /* Dictionary+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
+		06BDDD91276C1CC000B68B25 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +118,9 @@
 		060D9F7D276B400200E02979 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				06BDDD83276C0FFD00B68B25 /* Extension */,
+				06BDDD7D276C0D2F00B68B25 /* Models */,
+				06BDDD76276C0CFE00B68B25 /* View */,
 				060D9F7E276B400C00E02979 /* Coordinator */,
 			);
 			path = Common;
@@ -197,6 +220,77 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		06BDDD76276C0CFE00B68B25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06BDDD77276C0D0F00B68B25 /* TabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06BDDD77276C0D0F00B68B25 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				06BDDD78276C0D0F00B68B25 /* Coordinator */,
+				06BDDD7A276C0D0F00B68B25 /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		06BDDD78276C0D0F00B68B25 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				06BDDD79276C0D0F00B68B25 /* TabBarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		06BDDD7A276C0D0F00B68B25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06BDDD7B276C0D0F00B68B25 /* TabBar.swift */,
+				06BDDD7C276C0D0F00B68B25 /* TabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06BDDD7D276C0D2F00B68B25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06BDDD88276C1B3500B68B25 /* Photo */,
+				06BDDD87276C1B2D00B68B25 /* TabBar */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06BDDD83276C0FFD00B68B25 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				06BDDD91276C1CC000B68B25 /* UIColor+.swift */,
+				06BDDD84276C101000B68B25 /* UIDevice+.swift */,
+				06BDDD8F276C1C9B00B68B25 /* Dictionary+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		06BDDD87276C1B2D00B68B25 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				06BDDD7E276C0D2F00B68B25 /* TabBarItem.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		06BDDD88276C1B3500B68B25 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				06BDDD89276C1BE800B68B25 /* Photo.swift */,
+				06BDDD8B276C1C0500B68B25 /* PhotoExif.swift */,
+				06BDDD8D276C1C5600B68B25 /* User.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,14 +362,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06BDDD8C276C1C0500B68B25 /* PhotoExif.swift in Sources */,
 				060D9F8C276B428000E02979 /* AppCoordinator.swift in Sources */,
 				06BDDD72276B60B500B68B25 /* ImageDetailCoordinator.swift in Sources */,
 				060D9F68276B3F4C00E02979 /* AppDelegate.swift in Sources */,
 				060D9F80276B401D00E02979 /* Coordinator.swift in Sources */,
 				060D9F89276B41B600E02979 /* SplashViewController.swift in Sources */,
+				06BDDD85276C101300B68B25 /* UIDevice+.swift in Sources */,
+				06BDDD8E276C1C5600B68B25 /* User.swift in Sources */,
 				060D9F8E276B42A200E02979 /* SplashCoordinator.swift in Sources */,
 				060D9F95276B48A400E02979 /* HomeCoordinator.swift in Sources */,
 				06BDDD74276B60DB00B68B25 /* ImageDetailViewController.swift in Sources */,
+				06BDDD90276C1C9B00B68B25 /* Dictionary+.swift in Sources */,
+				06BDDD8A276C1BE800B68B25 /* Photo.swift in Sources */,
+				06BDDD80276C0E2900B68B25 /* TabBar.swift in Sources */,
+				06BDDD92276C1CC000B68B25 /* UIColor+.swift in Sources */,
+				06BDDD82276C0E2A00B68B25 /* TabBarItem.swift in Sources */,
+				06BDDD81276C0E2900B68B25 /* TabBarController.swift in Sources */,
+				06BDDD7F276C0E2600B68B25 /* TabBarCoordinator.swift in Sources */,
 				060D9F91276B43B000E02979 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
